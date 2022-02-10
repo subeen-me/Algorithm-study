@@ -15,7 +15,7 @@ public class 숫자만추출 {
 
 
     /* //s는 문자와 숫자가 섞여있는 문자열
-    public int solution(Algorithm.String s) {
+    public int solution(String s) {
         int answer = 0;
         for(char x : s.toCharArray()){
             // 아스키 넘버 이용

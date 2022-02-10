@@ -6,13 +6,13 @@ import java.util.Scanner;
 // 2. indexOf, subString으로 푸는 방법
 
 public class 문장속단어 {
-    /*public Algorithm.String solution(Algorithm.String str) {
-        Algorithm.String answer = "";
+    /*public String solution(String str) {
+        String answer = "";
         //숫자의 갯수를 세는 m을 가장 작은 값으로 초기화
         int m = Integer.MIN_VALUE;
         //띄어쓰기로 문자열을 분리시켜 문자배열에 넣는다
-        Algorithm.String[] s = str.split(" ");
-        for(Algorithm.String x : s) {
+        String[] s = str.split(" ");
+        for(String x : s) {
             //분리시킨 배열 하나하나의 길이를 정수값 len에 넣는다
            int len = x.length();
            //m보다 len이 크다면 len을 m에 넣고, 답에 대입한다

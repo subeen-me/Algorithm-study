@@ -26,13 +26,13 @@ public class 단어뒤집기 {
         return answer;
     }
 
-    /*public ArrayList<Algorithm.String> solution(int n, Algorithm.String[] str) {
-        ArrayList<Algorithm.String> answer = new ArrayList<>();
-        for(Algorithm.String x : str) { //Algorithm.String 객체중 하나인 StringBuilder를 활용
+    /*public ArrayList<String> solution(int n, String[] str) {
+        ArrayList<String> answer = new ArrayList<>();
+        for(String x : str) { //String 객체중 하나인 StringBuilder를 활용
             //StringBuilder 객체를 만들고 reverse로 뒤집고 toString으로 문자열로 변환
             //String은 불변형.값 변경 불가해서 새로운 객체를 계속 만들고 대입해야하는 단점
             //StringBuilder는 처음에 만든 객체로 계속 사용, 메모리 낭비 없음. 연산 많아질 때 쓰면 좋다.
-            Algorithm.String tmp = new StringBuilder(x).reverse().toString();
+            String tmp = new StringBuilder(x).reverse().toString();
             //ArrayList 추가 메서드로 tmp 대입
             answer.add(tmp);
         }
