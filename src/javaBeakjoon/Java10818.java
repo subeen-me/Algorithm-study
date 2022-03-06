@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class Java10818 {
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
@@ -14,6 +15,7 @@ public class Java10818 {
 
         st = new StringTokenizer(br.readLine());
         int min = 0, max = 0;
+
         for(int i=0; i<num; i++) {
             int can = Integer.parseInt(st.nextToken());
             if(i == 0) {
