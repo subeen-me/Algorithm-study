@@ -1,6 +1,5 @@
 package javaBeakjoon;
 
-import org.w3c.dom.Node;
 
 import java.io.*;
 import java.util.Deque;
@@ -21,10 +20,26 @@ public class Java11003 {
         for(int i=0; i<n; i++) {
             int now = Integer.parseInt(st.nextToken());
 
-            while (!mydeque.isEmpty() && mydeque.getLast().getNodeValue() > now) {
+            while (!mydeque.isEmpty() && mydeque.getLast().value > now) {
                 mydeque.removeLast();
             }
+            mydeque.addLast(new Node(now, i));
+            if(mydeque.getFirst().index <= i - l) {
+                mydeque.removeFirst();
+            }
+            bw.write(mydeque.getFirst().value + " ");
+        }
+        bw.flush();
+        bw.close();
+    }
 
+    static class Node {
+        public int value;
+        public int index;
+
+        Node(int value, int index) {
+            this.value = value;
+            this.index = index;
         }
     }
 }
