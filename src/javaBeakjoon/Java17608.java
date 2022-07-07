@@ -14,7 +14,7 @@ public class Java17608 {
 
         int h = 0;
         for(int i=0; i<N; i++) {
-            h = Integer.parseInt(br.readLine());
+            h = Integer.parseInt(br.readLine()); //왼쪽 숫자부터 차례로 push
             stack.push(h);
         }
 
