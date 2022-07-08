@@ -21,6 +21,7 @@ public class Java11286 {
             }
 
             //first가 더 크면 양수를 리턴, 뒤에 있는 데이터가 더 크면 음수를 리턴
+            //절댓값을 기준으로 정렬하기
             return first_abs - second_abs;
         }));
 
